@@ -1,6 +1,7 @@
 
 import BotonesV2 from "./src/pages/BotonesV2";
 import Botones from "./src/pages/Butones";
+import HomePrincipal from "./src/pages/HomePrincipal";
 // import Home from "./src/pages/Home";
 
 
@@ -8,7 +9,8 @@ import Botones from "./src/pages/Butones";
   return (
     // <Home/>,
     // <Botones/>
-    <BotonesV2/>
+    // <BotonesV2/>
+    <HomePrincipal/>
 
 
   );
