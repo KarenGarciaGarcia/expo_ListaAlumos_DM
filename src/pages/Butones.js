@@ -1,5 +1,6 @@
 
 import {TouchableOpacity, StyleSheet, Platform, Text, View,StatusBar } from 'react-native';
+import  Icon  from 'react-native-vector-icons/FontAwesome';
 
 
 
@@ -14,8 +15,9 @@ export default function Botones(){
             </TouchableOpacity>
 
             {/* Boton 2 */}
-            <TouchableOpacity style={style.botonBasico}>
-                <Text style={style.text} >Boton 1</Text>
+            <TouchableOpacity style={style.botonIcono}>
+                <Icon name="person" size={20} style={style.iconB}/>
+                <Text style={style.text} >Boton Icono</Text>
             </TouchableOpacity>
             
 
@@ -46,7 +48,25 @@ const style = StyleSheet.create({
         
         color:'#070707ff',
         textAlign:'center',
-        fontWeight:'bold'
+        fontWeight:'bold',
+  
+    },
+    botonIcono: {
+        backgroundColor:'#fff',
+        fontSize: 30,
+        padding:12,
+        borderRadius:10,
+        marginTop:10,
+        marginBottom:10,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent:'center'
+
+    },
+    iconB:{
+        color:'#e60a0aff',
     }
+    
+
 
 })
