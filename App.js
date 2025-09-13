@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.holamundo}>Hola Mundo</Text>
+      <Text style={styles.h1}>Bienvenidos</Text>
+      <Text style={styles.h2}>a la clase </Text>
+      <Text style={styles.h3}>de la Materia de Desarrollo Movil</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,10 +19,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  holamundo:{
-    fontSize:50,
-    borderRadius: 30,
-    backgroundColor: '#fff',
-    padding: 15,
+  h1:{
+    fontSize:40,
+    fontWeight: 'bold',
+  },
+  h2:{
+    fontSize:30,
+    fontWeight:'600', 
+    marginTop:10
+  },
+  h3:{
+    fontSize:20,
+    fontWeight: '600', 
+    marginTop:10
   },
 });
