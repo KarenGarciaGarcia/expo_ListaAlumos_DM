@@ -1,4 +1,5 @@
 
+import BotonesV2 from "./src/pages/BotonesV2";
 import Botones from "./src/pages/Butones";
 // import Home from "./src/pages/Home";
 
@@ -6,7 +7,8 @@ import Botones from "./src/pages/Butones";
  export default function App() {
   return (
     // <Home/>,
-    <Botones/>
+    // <Botones/>
+    <BotonesV2/>
 
 
   );
