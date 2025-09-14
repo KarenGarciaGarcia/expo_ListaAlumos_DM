@@ -6,8 +6,10 @@ import { StyleSheet, Platform, Text, View,StatusBar, ScrollView, TextInput } fro
 export default function Formulario(){
     return (
         <SafeAreaView style={style.mainS}>
-            <Text>Nombre:</Text>
-            <TextInput placeholder="Escribe tu nombre"/>
+            <Text style={style.label}>Nombre:</Text>
+            <TextInput style={style.input} placeholder="Escribe tu nombre"/>
+            <Text style={style.label}>Descripción:</Text>
+            <TextInput style={[style.input,style.textArea]} placeholder="Agrega una Descripción"/>
         </SafeAreaView>
     );
  
@@ -19,6 +21,21 @@ const style = StyleSheet.create({
         paddingTop:Platform.OS === 'android' ? StatusBar.currentHeight: 44,
         padding: 15
     },
+    label:{
+        fontWeight:'bold',
+        marginTop:10,
+        marginBottom:10
+    },
+    input:{
+        borderWidth:1,
+        borderColor:'#030303ff',
+        borderRadius:10,
+
+    },
+    textArea:{
+        height:100,
+        textAlignVertical:'top',
+    }
     
 
 })
