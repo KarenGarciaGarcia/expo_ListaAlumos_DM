@@ -9,7 +9,7 @@ export default function Formulario(){
             <Text style={style.label}>Nombre:</Text>
             <TextInput style={style.input} placeholder="Escribe tu nombre"/>
             <Text style={style.label}>Descripción:</Text>
-            <TextInput style={[style.input,style.textArea]} placeholder="Agrega una Descripción"/>
+            <TextInput multiline={true} numberOfLines={14} style={[style.input,style.textArea]} placeholder="Agrega una Descripción"/>
         </SafeAreaView>
     );
  
