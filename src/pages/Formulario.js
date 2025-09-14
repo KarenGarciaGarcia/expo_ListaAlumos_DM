@@ -14,6 +14,8 @@ export default function Formulario(){
             <TextInput style={style.input} placeholder="Ingresa tu correo" keyboardType="email-address"/>
             <Text style={style.label}>Contraseña:</Text>
             <TextInput style={style.input} placeholder="********" secureTextEntry/>
+            <Text style={style.label}>Telefono:</Text>
+            <TextInput style={style.input} placeholder="123456789" keyboardType="numeric"/>
         </SafeAreaView>
     );
  
