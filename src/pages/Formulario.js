@@ -36,6 +36,7 @@ const style = StyleSheet.create({
         fontWeight:'bold',
         marginTop:20,
         textAlign:'center'
+    },
     label: {
         fontWeight: 'bold',
         marginTop: 10,
