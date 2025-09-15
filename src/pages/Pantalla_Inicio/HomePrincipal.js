@@ -1,9 +1,9 @@
 
 import { StyleSheet, Platform, Text, View,StatusBar, ScrollView } from 'react-native';
-import CardBasico from '../components/CardBasico';
-import CardBasicoImg from '../components/CardImg';
-import CardV2 from '../components/CardV2';
-import CardV3 from '../components/CardV3';
+// import CardBasico from '../components/CardBasico';
+// import CardBasicoImg from '../components/CardImg';
+// import CardV2 from '../components/CardV2';
+// import CardV3 from '../components/CardV3';
 
 
 
