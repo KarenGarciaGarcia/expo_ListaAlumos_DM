@@ -4,6 +4,8 @@ import {TouchableOpacity, Image, ScrollView, StyleSheet, Platform, Text, StatusB
 import { MaterialIcons } from '@expo/vector-icons';
 
 
+
+
 const { width } = Dimensions.get('window');
 export default function FormularioV2() {
     return (
@@ -12,6 +14,10 @@ export default function FormularioV2() {
             <ScrollView>
                 <Text style={style.title}> Formulario V2</Text>
                 <View style={style.container}>
+                    <TouchableOpacity style={style.cerrarBoton}>
+                        < MaterialIcons name="close" size={20} color={'#ffffffff'}/>
+
+                    </TouchableOpacity>
                     <Image source={{ uri: 'https://static.vecteezy.com/system/resources/previews/006/631/105/original/portrait-of-brunette-woman-avatar-of-female-person-icon-of-adult-in-flat-style-vector.jpg' }} style={style.avatar} />
                     <Text style={style.name}>KAREN GARCIA GARCIA </Text>
                     <View style={style.infoContainer}>
@@ -121,6 +127,20 @@ const style = StyleSheet.create({
     iconoIzquierda:{
         marginRight:10
     },
+    cerrarBoton:{
+        position:'absolute',
+        top:15,
+        right:15,
+        zIndex:10,
+        borderRadius:30,
+        backgroundColor:'#f11b1bff',
+        width:30,
+        height:30,
+        justifyContent:'center',
+        alignItems:'center',
+        elevation:3
+
+    }
 
 
 })
